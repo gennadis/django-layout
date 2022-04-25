@@ -4,8 +4,9 @@
 <head>
     <title>Пример подключения плеера</title>
     <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <meta charset="utf-8">
     <style type='text/css'>
-        .control-button {
+        .control-buttons {
             background-color: transparent;
             border-style: none;
             cursor: pointer;
@@ -37,7 +38,6 @@
             color: white
         }
     </style>
-    <meta charset="utf-8">
 </head>
 
 <body>
@@ -45,26 +45,25 @@
         <div class="js-video-container video-container"></div>
 
         <div class="buttons-background">
-            <button class="js-play-button control-button" ; type="button">
+            <button class="js-play-button control-buttons">
                 <i class="fa fa-play button-icon" aria-hidden="true"></i>
             </button>
 
-            <button class="js-pause-button control-button" hidden type="button">
+            <button class="js-pause-button control-buttons">
                 <i class="fa fa-pause button-icon" aria-hidden="true"></i>
             </button>
 
-            <button class="js-mute-button control-button" ; type="button">
+            <button class="js-mute-button control-buttons">
                 <i class="fa fa-volume-up button-icon" aria-hidden="true"></i>
             </button>
 
-            <button class="js-volume-button control-button" hidden type="button">
+            <button class="js-volume-button control-buttons" hidden>
                 <i class="fa fa-volume-off button-icon" aria-hidden="true"></i>
             </button>
 
-            <button class="js-fullscreen-button control-button" ; type="button" style="float: right;">
+            <button class="js-fullscreen-button control-buttons" style="float: right;">
                 <i class="fa fa-expand button-icon" aria-hidden="true"></i>
             </button>
-
         </div>
 
     </div>
