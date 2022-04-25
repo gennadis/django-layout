@@ -6,10 +6,6 @@
     <link rel="stylesheet" href="static/css/font-awesome.min.css">
     <meta charset="utf-8">
     <style>
-        .player-video-container {
-            flex-grow: 3
-        }
-
         .video-player {
             display: flex;
             flex-direction: column;
@@ -19,8 +15,13 @@
             box-shadow: 0 0 30px rgba(50, 50, 50, 1);
         }
 
+        .player-video-container {
+            flex-grow: 1
+        }
+
         .player-buttons {
             background-color: transparent;
+            color: white;
             border-style: none;
             cursor: pointer;
             line-height: 150%;
@@ -30,12 +31,13 @@
             padding: 5px;
         }
 
-        .player-buttons-background {
+        .player-buttons-panel {
             background-color: black;
+            display: flex;
         }
 
-        .player-buttons-color {
-            color: white
+        .player-buttons-empty-divider {
+            flex-grow: 1
         }
     </style>
 </head>
@@ -44,25 +46,27 @@
     <div id="player" class="video-player">
         <div class="js-video-container player-video-container"></div>
 
-        <div class="player-buttons-background">
+        <div class="player-buttons-panel">
             <button class="js-play-button player-buttons">
-                <i class="fa fa-play player-buttons-color" aria-hidden="true"></i>
+                <i class="fa fa-play" aria-hidden="true"></i>
             </button>
 
             <button class="js-pause-button player-buttons">
-                <i class="fa fa-pause player-buttons-color" aria-hidden="true"></i>
+                <i class="fa fa-pause" aria-hidden="true"></i>
             </button>
 
             <button class="js-mute-button player-buttons">
-                <i class="fa fa-volume-up player-buttons-color" aria-hidden="true"></i>
+                <i class="fa fa-volume-up" aria-hidden="true"></i>
             </button>
 
             <button class="js-volume-button player-buttons">
-                <i class="fa fa-volume-off player-buttons-color" aria-hidden="true"></i>
+                <i class="fa fa-volume-off" aria-hidden="true"></i>
             </button>
 
+            <div class="player-buttons-empty-divider"></div>
+
             <button class="js-fullscreen-button player-buttons" style="float: right;">
-                <i class="fa fa-expand player-buttons-color" aria-hidden="true"></i>
+                <i class="fa fa-expand" aria-hidden="true"></i>
             </button>
         </div>
 
