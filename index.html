@@ -5,23 +5,8 @@
     <title>Пример подключения плеера</title>
     <link rel="stylesheet" href="static/css/font-awesome.min.css">
     <meta charset="utf-8">
-    <style type='text/css'>
-        .control-buttons {
-            background-color: transparent;
-            border-style: none;
-            cursor: pointer;
-            line-height: 150%;
-            font-size: 150%;
-            width: 40px;
-            margin: 5px;
-            padding: 5px;
-        }
-
-        .buttons-background {
-            background-color: black;
-        }
-
-        .video-container {
+    <style>
+        .player-video-container {
             flex-grow: 3
         }
 
@@ -34,7 +19,22 @@
             box-shadow: 0 0 30px rgba(50, 50, 50, 1);
         }
 
-        .button-icon {
+        .player-buttons {
+            background-color: transparent;
+            border-style: none;
+            cursor: pointer;
+            line-height: 150%;
+            font-size: 150%;
+            width: 40px;
+            margin: 5px;
+            padding: 5px;
+        }
+
+        .player-buttons-background {
+            background-color: black;
+        }
+
+        .player-buttons-color {
             color: white
         }
     </style>
@@ -42,27 +42,27 @@
 
 <body>
     <div id="player" class="video-player">
-        <div class="js-video-container video-container"></div>
+        <div class="js-video-container player-video-container"></div>
 
-        <div class="buttons-background">
-            <button class="js-play-button control-buttons">
-                <i class="fa fa-play button-icon" aria-hidden="true"></i>
+        <div class="player-buttons-background">
+            <button class="js-play-button player-buttons">
+                <i class="fa fa-play player-buttons-color" aria-hidden="true"></i>
             </button>
 
-            <button class="js-pause-button control-buttons">
-                <i class="fa fa-pause button-icon" aria-hidden="true"></i>
+            <button class="js-pause-button player-buttons">
+                <i class="fa fa-pause player-buttons-color" aria-hidden="true"></i>
             </button>
 
-            <button class="js-mute-button control-buttons">
-                <i class="fa fa-volume-up button-icon" aria-hidden="true"></i>
+            <button class="js-mute-button player-buttons">
+                <i class="fa fa-volume-up player-buttons-color" aria-hidden="true"></i>
             </button>
 
-            <button class="js-volume-button control-buttons" hidden>
-                <i class="fa fa-volume-off button-icon" aria-hidden="true"></i>
+            <button class="js-volume-button player-buttons" hidden>
+                <i class="fa fa-volume-off player-buttons-color" aria-hidden="true"></i>
             </button>
 
-            <button class="js-fullscreen-button control-buttons" style="float: right;">
-                <i class="fa fa-expand button-icon" aria-hidden="true"></i>
+            <button class="js-fullscreen-button player-buttons" style="float: right;">
+                <i class="fa fa-expand player-buttons-color" aria-hidden="true"></i>
             </button>
         </div>
 
@@ -74,7 +74,7 @@
     <script src="player.js"></script>
 
     <script type="text/javascript">
-        createPlayer({ elementId: 'player' });
+        createPlayer({ elementId: "player" });
     </script>
 
 </body>
