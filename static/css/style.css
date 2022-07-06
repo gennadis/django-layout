@@ -20,13 +20,13 @@
     color: white;
     border-style: none;
     cursor: pointer;
-    font-size: large;
+    font-size: 21px;
     width: 30px;
     height: 36px;
     margin: 3px;
+    margin-left: 2px;
     padding: 1px;
 }
-
 
 .player .viewing-panel {
     display: flex;
@@ -39,6 +39,7 @@
 .player .timestamp {
     color: white;
     font-family: 'Roboto', sans-serif;
+    margin-left: -1px;
 }
 
 .progress-bar {
@@ -46,7 +47,7 @@
     width: 100%;
     height: 20px;
     background: none;
-    padding: 0 10px;
+    padding: 0 8px;
 }
 
 .progress-bar:hover .progress-dot {
@@ -55,9 +56,9 @@
 
 .progress-bar-slider {
     background-color: #f8104d;
-    height: 6px;
-    margin-top: 6px;
-    border-radius: 4px;
+    height: 5px;
+    margin-top: 7px;
+    border-radius: 3px;
 }
 
 .progress-dot {
