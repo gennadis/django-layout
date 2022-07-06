@@ -3,7 +3,7 @@
 This project is a single page site with a basic `JavaScript` video player, that implements some advanced layout technichs.
 You can run it locally or check out it's deployed version on [GitHub Pages](https://gennadis.github.io/django-layout/)
 
-![Demo](demo.gif)
+![Screenshot](Screenshot.png)
 
 ## Installation
 1. Clone project
