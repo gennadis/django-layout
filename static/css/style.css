@@ -46,4 +46,12 @@
     width: 100%;
     height: 20px;
     background: none;
+    padding: 0 10px;
+}
+
+.progress-bar-slider {
+    background-color: #f8104d;
+    height: 6px;
+    margin-top: 6px;
+    border-radius: 4px;
 }
